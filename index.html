@@ -27,7 +27,7 @@
   <!--     <meta name="twitter:image" content="https://www.example.com/imagem.jpg"> -->
 
   <!-- Favicon -->
-  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
 
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="styles.css">
@@ -40,7 +40,7 @@
 
   <header>
     <div class="gatilho">
-      <marquee direction="left">Entre em contato agora mesmo pelo <a href="https://wa.me/5511942278254" target="_blank"
+      <marquee direction="left">Entre em contato agora mesmo pelo <a href="#" onclick="window.open(chamaWhats)" target="_blank"
           rel="noopener noreferrer"><strong>Whatsapp</strong></a> e tire todas suas dúvidas</marquee>
     </div>
     <div class="header">
@@ -63,7 +63,7 @@
 
     <section class="inicio" id="inicio">
       <div class="selo-aprovacao"><img src="./assets/images/selo-aprovacao.png" alt="Selo de qualidade garantida"></div>
-      <div class="whatsapp"><a href="https://wa.me/5511942278254" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp fa-bounce"></i></a></div>
+      <div class="whatsapp"><a href="#" onclick="window.open(chamaWhats)" target="_blank" rel="noopener noreferrer" aria-label="Abrir no WhatsApp"><i class="fa-brands fa-square-whatsapp fa-bounce"></i></a></div>
       <h1>Laudo Técnico e <strong>ART</strong> para sua obra ou reforma em até <strong>24 horas!</strong></h1>
       <a href="#contato" class="btn-orcamento">QUERO UM ORÇAMENTO</a>
     </section>
@@ -251,39 +251,49 @@
     </section>
 
     <section class="porque-contratar" id="porque-contratar">
-      <h2>Por que contratar?</h2>
-      <hr>
+      <h2>Por que contratar?<hr></h2>
+      
       <div class="content">
-        <div class="servicos-img">
-          <img src="" alt="aperto de mão entre dois homens">
+        <div class="porque-img">
+          <img src="./assets/images/" alt="aperto de mão entre dois homens">
         </div>
         <div class="text">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo maiores, nemo eaque deserunt in
-            rem quibusdam autem quos eligendi fuga corporis sunt vitae saepe repellendus sed iure placeat recusandae
-            sapiente.
-            Cumque, sapiente corporis placeat eveniet harum hic laboriosam totam, natus, cupiditate voluptate inventore
-            consequatur perferendis! Enim repudiandae sit eius voluptas explicabo nam itaque illo, error provident minus
-            quis labore officiis.</p>
+          <p>A norma técnica NBR 16.280/2015 visa promover maior segurança para os imóveis residenciais e comerciais. E a execução de laudos e ART é necessária para atestar a adequação das reformas realizadas, evitando possíveis riscos à estrutura do prédio e garantindo a tranquilidade e a segurança dos moradores.</p>
+          <p>Veja abaixo alguns dos serviços que requerem a ART de um profissional registrado ao CREA, conforme exigido pela norma NBR 16.280/2015:</p>
+          <ul>
+            <li>Troca de piso e revestimentos;</li>
+            <li>Instalação de aparelhos de ar condicionado;</li>
+            <li>Remoção de janelas e portas de sacadas;</li>
+            <li>Remoção de paredes não estruturais;</li>
+            <li>Reforma do sistema hidro sanitário;</li>
+            <li>Envidraçamento de sacada;</li>
+            <li>Instalações elétricas;</li>
+            <li>Instalações de gás;</li>
+          </ul>
+          
         </div>
       </div>
     </section>
 
     <section class="contato" id="contato">
-      <h2>Contato</h2>
-      <hr>
+      <h2>Contato<hr></h2>
+      
       <div class="content">
         <div class="text">
           <p>Converse diretamente conosco no WhatsApp! Clique no botão abaixo para iniciar uma conversa e obter
             respostas rápidas para suas perguntas.
-
+            <br/><br/>
             Transforme sua visão em realidade. Preencha o formulário e descubra como nossa expertise pode impulsionar
             seus projetos
-
+            <br/><br/>
             Atendimento de Domingo a Domingo, das 08h00 às 20h00.</p>
-          <a href="contato" class="btn-whatsapp">WHATSAPP <br />(11)9.9999-9999</a>
+            <div class="btn-whatsapp">
+              <i class="fa-brands fa-whatsapp whats-clean"></i>
+              <a href="#contato" onclick="window.open(chamaWhats)" >WHATSAPP <br/>(11)9.9999-9999</a>
+            </div>
 
         </div>
-        <div class="servicos-img">
+        <div class="contato-img">
           <img src="" alt="casal sentado no sofa entrando em contato conosco">
         </div>
       </div>
@@ -292,7 +302,7 @@
   </main>
   <footer>
     <div class="logo">
-      <h1>LOGO</h1>
+      <h1>ART express</h1>
     </div>
     <div class="menu-footer">
       <ul>
@@ -304,7 +314,7 @@
       </ul>
     </div>
     <p>© 2024 Marques Engenharia | Emissão de ART expressa | CNPJ: 33.444.000/0001-49</p>
-    <p>Desenvolvido por <a href="http://starck.dev.br" target="_blank" rel="noopener noreferrer">starck.dev.br</a></p>
+    <p>Desenvolvido por <a href="https://starck.dev.br" target="_blank" rel="noopener noreferrer">starck.dev.br</a></p>
 
   </footer>
 

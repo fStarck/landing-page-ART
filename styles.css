@@ -63,6 +63,12 @@ header {
     font-size: 5em;
   }
 
+  .whats-clean {
+    font-size: 2em;
+    color: var(--cor-texto-escuro);
+
+  }
+
 section {
   display: flex;
   flex-direction: column;
@@ -86,7 +92,7 @@ h2 {
     height: 2px;
     border: none;
     width: 80%;
-    background-color: #25D366;
+    background-color: #2915A9;
   }
 
 }
@@ -100,8 +106,9 @@ h2 {
   font-weight: 600;
   font-size: 1.5rem;
   width: fit-content;
-
 }
+
+
 
 .gatilho {
   position: fixed;
@@ -184,6 +191,7 @@ h2 {
 
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
 
   h1 {
@@ -256,7 +264,94 @@ h2 {
 }
 
 
+.porque-contratar {
+  background-image: url(assets/images/porque-contratar-mobile.png);
+  background-position: top;
+  background-size: cover;
+  margin:  -12px;
+  padding: 1rem 20px;
+}
 
+.porque-img {
+  display: none;
+}
+
+.porque-contratar > .content > .text {
+  ul {
+    margin-top: 1rem;
+    list-style-type: disc; /* Define o tipo de marcador */
+    margin-left: 20px;
+  }
+}
+
+.contato{
+  background-color: var(--cor-tercearia);
+  color: var(--cor-texto-claro);
+  margin: 0 -12px;
+  padding: 1rem 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+
+.btn-whatsapp {
+  background-color: var(--cor-btn-whats);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: max-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+  
+  a {
+    color: var(--cor-texto-escuro);
+    text-decoration: none;
+  }
+
+
+}
+
+.contato-img{
+  display: none;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  .menu-footer {
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 0.5rem;
+      li a {
+        
+        text-decoration: none;
+       }
+    }
+  }
+
+
+}
 
 
 
