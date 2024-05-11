@@ -45,29 +45,29 @@ header {
   position: absolute;
   top: 550px;
   left: calc(50% - 75px);
-  
-  }
-  
-  .whatsapp {
-    position: fixed;
-    bottom: 3vh;
-    right: 5vw;   
-  
-    a {
-      height: 100px !important;
-      color: var(--cor-btn-whats);
-    }
-  }
-  
-  .fa-square-whatsapp {
-    font-size: 5em;
-  }
 
-  .whats-clean {
-    font-size: 2em;
-    color: var(--cor-texto-escuro);
+}
 
+.whatsapp {
+  position: fixed;
+  bottom: 3vh;
+  right: 5vw;
+
+  a {
+    height: 100px !important;
+    color: var(--cor-btn-whats);
   }
+}
+
+.fa-square-whatsapp {
+  font-size: 5em;
+}
+
+.whats-clean {
+  font-size: 2em;
+  color: var(--cor-texto-escuro);
+
+}
 
 section {
   display: flex;
@@ -86,7 +86,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  
+
   hr {
     margin: 1rem 0 1.5rem 0;
     height: 2px;
@@ -108,7 +108,9 @@ h2 {
   width: fit-content;
 }
 
-
+marquee {
+  z-index: 100;
+}
 
 .gatilho {
   position: fixed;
@@ -150,20 +152,33 @@ h2 {
     justify-content: space-between;
     align-items: center;
   }
-
-
-
 }
 
 .menu-list {
   display: none;
+  justify-content: end;
+  text-align: end;
+  position: absolute;
+  top: 54px;
+  margin-left: -30px;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  width: 100vw;
+  
+  ul,
+  a {
 
-  ul , a{
-    position: relative;
-    z-index: 2;
     text-decoration: none;
     list-style: none;
+    li {
+      padding: 0.5rem;
+      width: 100vw;
+   } 
   }
+}
+
+.menu-list ul li:hover {
+  background-color: var(--cor-duvidas);
 }
 
 .header::before {
@@ -217,7 +232,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.servicos > .content {
+.servicos>.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,33 +257,33 @@ h2 {
 }
 
 .duvidas-frequentes {
-  background: rgb(20,22,48);
-  background: linear-gradient(56deg, rgba(20,22,48,1) 0%, rgba(77,114,159,1) 100%);
+  background: rgb(20, 22, 48);
+  background: linear-gradient(56deg, rgba(20, 22, 48, 1) 0%, rgba(77, 114, 159, 1) 100%);
   margin: 0 -12px;
+
   h2 {
     color: var(--cor-texto-claro);
   }
 
   .pergunta-resposta {
-  h3 {
-    background-color: var(--cor-duvidas);
-    margin: 20px 10px;
-    padding: 0.7rem 1rem 0.7rem 1rem;
-    max-width: 90vw;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }    
+    h3 {
+      background-color: var(--cor-duvidas);
+      margin: 20px 10px;
+      padding: 0.7rem 1rem 0.7rem 1rem;
+      max-width: 90vw;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
-
 
 .porque-contratar {
   background-image: url(assets/images/porque-contratar-mobile.png);
   background-position: top;
   background-size: cover;
-  margin:  -12px;
+  margin: -12px;
   padding: 1rem 20px;
 }
 
@@ -276,15 +291,16 @@ h2 {
   display: none;
 }
 
-.porque-contratar > .content > .text {
+.porque-contratar>.content>.text {
   ul {
     margin-top: 1rem;
-    list-style-type: disc; /* Define o tipo de marcador */
+    list-style-type: disc;
+    /* Define o tipo de marcador */
     margin-left: 20px;
   }
 }
 
-.contato{
+.contato {
   background-color: var(--cor-tercearia);
   color: var(--cor-texto-claro);
   margin: 0 -12px;
@@ -300,7 +316,7 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-  
+
 }
 
 
@@ -316,7 +332,7 @@ h2 {
   align-items: center;
   gap: 1rem;
   margin: 2rem;
-  
+
   a {
     color: var(--cor-texto-escuro);
     text-decoration: none;
@@ -325,7 +341,7 @@ h2 {
 
 }
 
-.contato-img{
+.contato-img {
   display: none;
 
 }
@@ -343,22 +359,14 @@ footer {
       flex-direction: column;
       list-style: none;
       gap: 0.5rem;
+
       li a {
-        
+
         text-decoration: none;
-       }
+      }
     }
   }
-
-
 }
-
-
-
-
-
-
-
 
 .duvidas-respostas {
   display: none;
