@@ -30,7 +30,6 @@ body {
   background-color: var(--cor-background);
   color: var(--cor-texto-escuro);
   font-family: "Noto Sans", sans-serif;
-  padding: 0 12px;
 }
 
 header {
@@ -42,10 +41,8 @@ header {
 }
 
 .selo-aprovacao {
-  position: absolute;
-  top: 550px;
-  left: calc(50% - 75px);
 
+margin: 2rem auto;
 }
 
 .whatsapp {
@@ -117,11 +114,12 @@ marquee {
   overflow: visible;
   width: 100vw;
   background-color: var(--cor-secundaria);
-  padding: 0.5rem;
   text-align: center;
   top: 0;
   left: 0;
-  height: 50px;
+  z-index: 2;
+  font-size: 1.5rem;
+  height: 40px;
 
   a {
     text-decoration: none;
@@ -134,12 +132,16 @@ marquee {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  overflow: visible;
+  top: 40px;
+  left: 0;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-
-  padding: 8px 20px;
-  z-index: 1;
+  padding: 0 20px;
+  margin: 0;
+  z-index: 2;
 
   h1,
   .menu-burguer {
@@ -148,6 +150,7 @@ marquee {
   }
 
   .menu {
+    padding: 0.5rem ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +163,7 @@ marquee {
   text-align: end;
   position: absolute;
   top: 54px;
-  margin-left: -30px;
+  right: 0px;
   padding: 1rem 2rem;
   background-color: #fff;
   width: 100vw;
@@ -188,26 +191,25 @@ marquee {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(256, 256, 256, 0.2);
+  background-color: rgba(256, 256, 256, 0.5);
   z-index: 1;
-  margin: 0 -12px;
-  padding: 0 20px;
 }
+
+
 
 .inicio {
   background-image: url(./assets/images/capa-mobile.png);
   background-position: top;
   background-size: cover;
   position: relative;
-  top: -55px;
-  margin: 0 -12px;
-  padding: 100px 20px;
-  min-height: 750px;
-
+  top: -80px;
+  padding: 150px 20px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+
 
   h1 {
     color: black;
@@ -230,6 +232,8 @@ marquee {
 
 .servicos {
   margin-bottom: 2rem;
+  margin-top: -5rem;
+  padding: 0 1rem;
 }
 
 .servicos>.content {
@@ -259,7 +263,7 @@ marquee {
 .duvidas-frequentes {
   background: rgb(20, 22, 48);
   background: linear-gradient(56deg, rgba(20, 22, 48, 1) 0%, rgba(77, 114, 159, 1) 100%);
-  margin: 0 -12px;
+  padding: 0 1rem;
 
   h2 {
     color: var(--cor-texto-claro);
@@ -268,8 +272,8 @@ marquee {
   .pergunta-resposta {
     h3 {
       background-color: var(--cor-duvidas);
-      margin: 20px 10px;
-      padding: 0.7rem 1rem 0.7rem 1rem;
+      margin: 20px 0;
+      padding: 0.7rem 1rem;
       max-width: 90vw;
       border-radius: 4px;
       display: flex;
@@ -283,8 +287,7 @@ marquee {
   background-image: url(assets/images/porque-contratar-mobile.png);
   background-position: top;
   background-size: cover;
-  margin: -12px;
-  padding: 1rem 20px;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .porque-img {
@@ -301,11 +304,9 @@ marquee {
 }
 
 .contato {
-  background-color: var(--cor-tercearia);
-  color: var(--cor-texto-claro);
-  margin: 0 -12px;
-  padding: 1rem 20px;
-  height: 500px;
+  background-color: var(--cor-background);
+  color: var(--cor-texto-escuro);
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,7 +352,9 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: var(--cor-tercearia);
+  color: var(--cor-texto-claro);
 
   .menu-footer {
     ul {
@@ -361,10 +364,14 @@ footer {
       gap: 0.5rem;
 
       li a {
-
+        color: var(--cor-texto-claro);
         text-decoration: none;
       }
     }
+  }
+  a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
   }
 }
 
