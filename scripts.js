@@ -1,6 +1,6 @@
 const chamaWhats = "https://wa.me/5511942278254"
 
-function toggleMenu() {
+/*  function toggleMenu() {
   let linksHeader = document.getElementById("menu-list");
   if (linksHeader.style.display === "flex") {
     linksHeader.style.display = "none";
@@ -22,7 +22,7 @@ document.addEventListener("click", function (event) {
     menuList.style.display = "none"
   }
 });
-
+ */
 
 function rolarParaSecao(event) {
   event.preventDefault();
@@ -36,6 +36,7 @@ function rolarParaSecao(event) {
     });
   }
 }
+
 var linksMenu = document.querySelectorAll('.menu-list a');
 linksMenu.forEach(function(link) {
   link.addEventListener("click", rolarParaSecao);
