@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap');
 
 :root {
-  --cor-background: #ccc;
+  --cor-background: #ececec;
   --cor-duvidas: rgba(204, 204, 204, 0.8);
   --cor-primaria: #2915A9;
   --cor-secundaria: #DDBF16;
-  --cor-tercearia: #261e5e;
+  --cor-tercearia: #3A537A;
   --cor-texto-claro: #ddd;
   --cor-texto-escuro: #333;
   --cor-titulo: #333;
@@ -18,7 +18,7 @@
   padding: 0;
   box-sizing: border-box;
 
-/*   outline: 1px solid red; */
+  /*  outline: 1px solid red; */
 
 }
 
@@ -48,7 +48,7 @@ header {
 }
 
 .selo-aprovacao {
-  margin: 2rem auto;
+  scale: 3;
 }
 
 .whatsapp {
@@ -103,12 +103,15 @@ h2 {
 .btn-orcamento {
   background-color: var(--cor-btn-contato);
   padding: 16px;
+  margin: 2rem;
   border-radius: 8px;
   color: var(--cor-texto-claro);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.5rem;
   width: fit-content;
+  box-shadow: 4px 4px 5px 0 rgba(51, 51, 51, 0.3);
+
 }
 
 marquee {
@@ -211,8 +214,7 @@ marquee {
   background-size: cover;
   position: relative;
   top: -80px;
-  padding: 150px 20px;
-  height: 800px;
+  padding: 150px 20px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -272,6 +274,8 @@ marquee {
   background: rgb(20, 22, 48);
   background: linear-gradient(56deg, rgba(20, 22, 48, 1) 0%, rgba(77, 114, 159, 1) 100%);
   padding: 0 1rem;
+  width: 100vw;
+
 
   h2 {
     color: var(--cor-texto-claro);
@@ -345,6 +349,7 @@ marquee {
   align-items: center;
   gap: 1rem;
   margin: 2rem;
+  box-shadow: 4px 4px 5px 0 rgba(51, 51, 51, 0.3);
 
   a {
     color: var(--cor-texto-escuro);
@@ -450,8 +455,12 @@ footer {
 
 
   .inicio {
-    height: 940px;
+    background-image: url(./assets/images/capa.png);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
     width: 100vw;
+
 
     h1 {
       margin-top: 3rem;
@@ -460,10 +469,10 @@ footer {
     }
 
     .selo-aprovacao {
-      scale: 2;
+      scale: 0.5;
       position: absolute;
-      top: 600px;
-      right: 200px;
+      top: 400px;
+      right: 150px;
       transform: rotate(30deg);
     }
   }
@@ -487,40 +496,61 @@ footer {
 
   .porque-contratar {
     width: 100vw;
+    background-image: url(assets/images/fundo-contrato.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 0 1rem 2rem 1rem;
 
     .content {
       max-width: 900px;
+      display: flex;
+      gap: 2rem;
     }
+  }
+
+
+
+  .porque-img {
+    display: flex;
+    max-width: 400px;
   }
 
   .duvidas-frequentes {
     width: 100vw;
 
     .duvidas {
-      width: 900px;
-
+      max-width: 900px;
     }
+
   }
 
   .contato {
     width: 100vw;
 
-    .text {
+    .content {
+      display: flex;
       max-width: 900px;
+      margin-bottom: 2rem;
+
+      .contato-img {
+        display: block;
+        margin-left: 2rem;
+        max-width: 400px;
+      }
     }
   }
 
   footer {
-    .menu-footer ul{
+    color: var(--cor-texto-claro);
+
+    .menu-footer ul {
       display: flex;
       flex-direction: row;
 
       li {
         margin: 0 2rem;
         width: max-content;
-
       }
     }
   }
-
 }
