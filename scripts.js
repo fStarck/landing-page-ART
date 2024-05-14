@@ -40,3 +40,19 @@ var linksMenu = document.querySelectorAll('.menu-list a');
 linksMenu.forEach(function(link) {
   link.addEventListener("click", rolarParaSecao);
 });
+
+function toggleAnswer(id) {
+  let answer = document.getElementById(id + '-answer');
+
+  if (answer.style.display === 'block') {
+    answer.style.display = 'none';
+  } else {
+    let allAnswers = document.querySelectorAll('.duvidas-respostas');
+    allAnswers.forEach(answer => {
+      answer.style.display = 'none';
+    });
+    answer.style.display = 'block';
+  }
+}
+
+
