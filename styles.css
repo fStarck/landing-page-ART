@@ -515,7 +515,9 @@ footer {
     }
   }
 
-
+  .qr-code {
+    height: 300px;
+  }
 
   .porque-img {
     display: flex;
