@@ -321,7 +321,6 @@ marquee {
   ul {
     margin-top: 1rem;
     list-style-type: disc;
-    /* Define o tipo de marcador */
     margin-left: 20px;
   }
 }
@@ -512,15 +511,13 @@ footer {
       max-width: 900px;
       display: flex;
       gap: 2rem;
+      align-items: center;
+      
     }
   }
 
-  .qr-code {
-    height: 300px;
-  }
-
   .porque-img {
-    display: flex;
+    display: block;
     max-width: 400px;
   }
 
@@ -531,6 +528,10 @@ footer {
       max-width: 900px;
     }
 
+  }
+
+  .qr-code {
+    height: 300px;
   }
 
   .contato {
