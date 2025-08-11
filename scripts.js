@@ -62,3 +62,24 @@ function toggleAnswer(id) {
 }
 
 
+const modal = document.getElementById('politicaModal');
+const btn = document.getElementById('politicaBtn');
+const span = document.getElementsByClassName('close')[0];
+
+btn.onclick = function() {
+  modal.style.display = 'block';
+}
+span.onclick = function() {
+  modal.style.display = 'none';
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+window.addEventListener('load', () => {
+  if (window.location.hash === '#politica') {
+    abrirModalPolitica(); // função que você já tenha para abrir o modal
+  }
+});
