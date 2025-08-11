@@ -66,12 +66,16 @@ const modal = document.getElementById('politicaModal');
 const btn = document.getElementById('politicaBtn');
 const span = document.getElementsByClassName('close')[0];
 
-btn.onclick = function() {
+function abrirModalPolitica() {
   modal.style.display = 'block';
 }
+
+btn.onclick = abrirModalPolitica;
+
 span.onclick = function() {
   modal.style.display = 'none';
 }
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = 'none';
@@ -80,6 +84,7 @@ window.onclick = function(event) {
 
 window.addEventListener('load', () => {
   if (window.location.hash === '#politica') {
-    abrirModalPolitica(); // função que você já tenha para abrir o modal
+    abrirModalPolitica();
   }
 });
+
